@@ -1,0 +1,1 @@
+powershell.exe -Command "(Add-Type -MemberDefinition '[DllImport(\"user32.dll\")] public static extern int SendMessage(int hWnd, int Msg, int wParam, int lParam);' -Name NativeMethods -Namespace User32 -PassThru)::SendMessage(-1, 0x0112, 0xF170, 2)"
